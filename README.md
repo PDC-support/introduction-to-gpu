@@ -1,5 +1,7 @@
 # Introduction to GPUs course, September and October 2023
 
+A practical course presented by PDC in collaboration with ENCCS, HPE and AMD
+
 # Schedule
 
 ## Friday 15th September (first online day)
