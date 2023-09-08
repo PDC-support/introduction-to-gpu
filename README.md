@@ -26,16 +26,17 @@
 - 16:45 – 17:00 Information on homework exercises (Johan Hellsvik)
 
 ## Thursday 12th October (first onsite day)
-
+### [Lecture hall E2](https://www.kth.se/places/room/id/6d755462-55f2-43a3-8312-e2285c572e40)
 - 09:00 – 11:00 Compiler techniques (Jean Pourroy, HPE)
 - 11:00 – 12:00 Own work on Himeno and own codes with tutoring
 - 13:30 – 15:00 Own work on Himono and own codes with tutoring
 - 15:00 – 16:00 Q&A section: Highlight things seen during the onsite help. Hand out template solutions for Himeno
 
 ## Friday 13th October (second onsite day)
-
+### [Lecture hall U41](https://www.kth.se/places/room/id/bb4faf52-8ff1-40ae-8211-b73a54703b8d)
 - 09:00 – 11:00 Optimization tools (Jean Pourroy, HPE).
 - 11:00 – 12:00 Continue on example codes: analyze codes
+### [Lecture hall E36](https://www.kth.se/places/room/id/3a0a5528-e43c-4f3c-9e6e-85689d6b0ce6)
 - 13:30 – 15:00 Walk through of the Himeno template solutions.
 - 15:00 – 15:45 Q&A section: Highlight things seen during the onsite help
 - 15:45 – 16:00 Concluding session.
