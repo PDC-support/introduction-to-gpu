@@ -12,6 +12,7 @@
 - 15:00 – 15:20 Logging in, starting jobs exercise (Johan Hellsvik)
 - 15:20 – 15:45 OpenMP (Johan Hellsvik)
 - 16:00 – 16:45 OpenMP exercises (Johan Hellsvik)
+- 16:45 - 17:00 Buffer time
 
 ## Friday 22nd September (second online day)
 
@@ -20,7 +21,7 @@
 - 13:20 – 13:45 HIP, incl Calling C from Fortran (Jonathan Vincent)
 - 14:00 – 14:20 HIP exercises (Jonathan Vincent)
 - 14:20 – 14:45 SYCL (Andrey Alekseenko)
-- 15:00 – 15:20 SYCL exercises
+- 15:00 – 15:20 SYCL exercises (Andrey Alekseenko)
 - 15:20 – 16:45 AMD Omni tools (AMD)
 - 16:45 – 17:00 Information on homework exercises (Johan Hellsvik)
 
