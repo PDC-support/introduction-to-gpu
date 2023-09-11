@@ -7,7 +7,7 @@ A practical course presented by PDC in collaboration with ENCCS, HPE and AMD
 ## Friday 15th September (first online day)
 
 - 12:50 – 13:00 Soft start and icebreaker question on HackMD
-- 13:00 – 13:10 Welcome to the course (Johan Hellsvik)
+- 13:00 – 13:10 [Welcome to the course](presentations/welcome.pdf) (Johan Hellsvik)
 - 13:10 – 13:45 Why GPUs? What problems fit to GPU? The GPU hardware and software ecosystem (Jonathan Vincent)
 - 14:00 – 14:20 GPU programming concepts (Jonathan Vincent)
 - 14:20 – 14:45 Introduction to GPU programming models (Andrey Alekseenko)
@@ -25,7 +25,7 @@ A practical course presented by PDC in collaboration with ENCCS, HPE and AMD
 - 14:20 – 14:45 SYCL (Andrey Alekseenko)
 - 15:00 – 15:20 SYCL exercises (Andrey Alekseenko)
 - 15:20 – 16:45 AMD Omni tools (AMD)
-- 16:45 – 17:00 Information on homework exercises (Johan Hellsvik)
+- 16:45 – 17:00 [Information on homework exercises](presentations/homework.pdf) (Johan Hellsvik)
 
 ## Thursday 12th October (first onsite day)
 ### [Lecture hall E2](https://www.kth.se/places/room/id/6d755462-55f2-43a3-8312-e2285c572e40)
