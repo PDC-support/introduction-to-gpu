@@ -8,9 +8,9 @@ A practical course presented by PDC in collaboration with ENCCS, HPE and AMD
 
 - 12:50 – 13:00 Soft start and icebreaker question on HackMD
 - 13:00 – 13:10 [Welcome to the course](presentations/welcome.pdf) (Johan Hellsvik)
-- 13:10 – 13:45 Why GPUs? What problems fit to GPU? The GPU hardware and software ecosystem (Jonathan Vincent)
-- 14:00 – 14:20 GPU programming concepts (Jonathan Vincent)
-- 14:20 – 14:45 Introduction to GPU programming models (Andrey Alekseenko)
+- 13:10 – 13:45 [Why GPUs? What problems fit to GPU? The GPU hardware and software ecosystem](presentations/GPU_Course_Day_1.pdf) (Jonathan Vincent)
+- 14:00 – 14:20 [GPU programming concepts](presentations/GPU_Course_Day_1.pdf) (Jonathan Vincent)
+- 14:20 – 14:45 [Introduction to GPU programming models](presentations/GPU-Overview.pdf) (Andrey Alekseenko)
 - 15:00 – 15:20 [Introduction to Dardel](presentations/introduction_dardel.pdf) (Johan Hellsvik)
 - 15:20 – 15:45 [OpenMP](presentations/openmp-gpu-pdc.pdf) (Johan Hellsvik)
 - 16:00 – 16:45 OpenMP exercises (Johan Hellsvik)
@@ -19,10 +19,10 @@ A practical course presented by PDC in collaboration with ENCCS, HPE and AMD
 ## Friday 22nd September (second online day)
 
 - 12:50 – 13:00 Soft start and icebreaker question on HackMD
-- 13:00 – 13:20 HIP (Jonathan Vincent)
-- 13:20 – 13:45 HIP, incl Calling C from Fortran (Jonathan Vincent)
+- 13:00 – 13:20 [HIP](presentations/GPU_Course_intro_to_HIP.pdf) (Jonathan Vincent)
+- 13:20 – 13:45 [HIP, incl Calling C from Fortran](presentations/GPU_Course_intro_to_HIP.pdf) (Jonathan Vincent)
 - 14:00 – 14:20 HIP exercises (Jonathan Vincent)
-- 14:20 – 14:45 SYCL (Andrey Alekseenko)
+- 14:20 – 14:45 [SYCL](presentations/SYCL.pdf) (Andrey Alekseenko)
 - 15:00 – 15:20 SYCL exercises (Andrey Alekseenko)
 - 15:20 – 16:45 AMD Omni tools (AMD)
 - 16:45 – 17:00 [Information on homework exercises](presentations/homework.pdf) (Johan Hellsvik)
