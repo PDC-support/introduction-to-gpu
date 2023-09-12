@@ -11,7 +11,7 @@ A practical course presented by PDC in collaboration with ENCCS, HPE and AMD
 - 13:10 – 13:45 Why GPUs? What problems fit to GPU? The GPU hardware and software ecosystem (Jonathan Vincent)
 - 14:00 – 14:20 GPU programming concepts (Jonathan Vincent)
 - 14:20 – 14:45 Introduction to GPU programming models (Andrey Alekseenko)
-- 15:00 – 15:20 Logging in, starting jobs exercise (Johan Hellsvik)
+- 15:00 – 15:20 [Introduction to Dardel](presentations/introduction_dardel.pdf) (Johan Hellsvik)
 - 15:20 – 15:45 [OpenMP](presentations/openmp-gpu-pdc.pdf) (Johan Hellsvik)
 - 16:00 – 16:45 OpenMP exercises (Johan Hellsvik)
 - 16:45 - 17:00 Buffer time
