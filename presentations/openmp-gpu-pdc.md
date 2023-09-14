@@ -519,16 +519,73 @@ Fortran
 
 Build and test run a Fortran program that calculates the dot product of vectors.
 
+<div class="columns">
+<div class="columns-left">
+
+```
+! Copyright (c) 2019 CSC Training
+! Copyright (c) 2021 ENCCS
+program dotproduct
+  implicit none
+
+  integer, parameter :: nx = 102400
+  real, parameter :: r=0.2
+
+  real, dimension(nx) :: vecA,vecB,vecC
+  real    :: sum
+  integer :: i
+
+  ! Initialization of vectors
+  do i = 1, nx
+     vecA(i) = r**(i-1)
+     vecB(i) = 1.0
+  end do
+```
+
+</div>
+<div class="columns-right">
+
+```
+ ! Dot product of two vectors
+  !$omp target teams distribute map(from:vecC) &
+  map(to:vecA,vecB)
+  do i = 1, nx
+     vecC(i) =  vecA(i) * vecB(i)
+  end do
+  !$omp end target teams distribute
+
+  sum = 0.0
+  ! Calculate the sum
+  !$omp target map(tofrom:sum)
+  do i = 1, nx
+     sum =  vecC(i) + sum
+  end do
+  !$omp end target
+  write(*,*) 'The sum is: ', sum
+
+end program dotproduct
+```
+
+</div>
+</div>
+
+---
+
 - Activate the PrgEnv-cray environment ``ml PrgEnv-cray``
 
 - Download the [source code](https://github.com/ENCCS/openmp-gpu/raw/main/content/exercise/ex04/solution/ex04.F90)
-    - ``wget https://github.com/ENCCS/openmp-gpu/raw/main/content/exercise/ex04/solution/ex04.F90``
+```
+wget https://github.com/ENCCS/openmp-gpu/raw/main/content/exercise/ex04/solution/ex04.F90
+```
 
 - Load the ROCm module and set the accelerator target to amd-gfx90a
-    - ``ml rocm/5.0.2 craype-accel-amd-gfx90a``
+    ``ml rocm/5.0.2 craype-accel-amd-gfx90a``
+
+- Activate verbose runtime information
+     ``export CRAY_ACC_DEBUG=3``
 
 - Compile the code on the login node
-    - ``ftn -fopenmp ex04.F90 -o ex04.x``
+    ``ftn -fopenmp ex04.F90 -o ex04.x``
 
 ---
 
@@ -536,8 +593,24 @@ Build and test run a Fortran program that calculates the dot product of vectors.
 
 - Edit [job_gpu_ex04.sh](https://github.com/PDC-support/pdc-intro/blob/master/COMPILE_exercises/job_gpu_ex04.sh) to specify the compute project and reservation
 
-- Submit the script with ``sbatch job_gpu_ex04.sh``
+```
+#!/bin/bash
+#SBATCH -A edu23.introgpu    # Set the allocation to be charged for this job
+#SBATCH -J myjob             # Name of the job
+#SBATCH -p gpu               # The partition
+#SBATCH -t 01:00:00          # 1 hour wall-clock time
+#SBATCH --nodes=1            # Number of nodes
+#SBATCH --ntasks-per-node=1  # Number of MPI processes per node
 
+ml rocm/5.0.2                # Load a ROCm module
+ml craype-accel-amd-gfx90a   # set the accelerator target
+
+srun ./ex04.x > output.txt   # Run the ex04.x executable
+```
+```
+#SBATCH --reservation=<name of reservation>
+```
+- Submit the script with ``sbatch job_gpu_ex04.sh``
 - with program output ``The sum is:  1.25`` written to ``output.txt``
 
 ---
@@ -547,9 +620,10 @@ Build and test run a Fortran program that calculates the dot product of vectors.
 - First queue to get one GPU node reserved for 10 minutes
 
     - ``salloc -N 1 -t 0:10:00 -A <project name> -p gpu``
+    where for the current course
+    - ``salloc -N 1 -t 0:10:00 -A edu23.introgpu -p gpu``
 
 - wait for a node, then run the program ``srun -n 1 ./ex04.x``
-
 - with program output to standard out ``The sum is:  1.25``
 
 ---
@@ -581,9 +655,34 @@ This is the [Exercise: Data Movement](https://enccs.github.io/openmp-gpu/data/#o
 
 The exercise is about optimization and explicitly moving the data using the `target data` family constructs. The [code for the exercise](https://github.com/ENCCS/openmp-gpu/tree/main/content/exercise/data_mapping)
 
-Three incomplete functions are added to explicitly move the data around in `core.cpp` or `core.F90`.
+---
 
-You need to add the directives for data movement for them.
+## Build and run the initial version of the code
+
+- Clone the git repository and go to the directory of the data mapping exercise
+
+```
+git clone https://github.com/ENCCS/openmp-gpu.git
+cd content/exercise/data_mapping
+```
+
+- Load the ROCm module and set the accelerator target to amd-gfx90a. Activate the PrgEnv-gnu environment. Using the Makefile, compile the code on the login node. Specify use of the Gnu compilers.
+
+```
+ml rocm/5.0.2 craype-accel-amd-gfx90a
+ml PrgEnv-gnu
+COMP=gnu make
+```
+
+---
+
+## Add directives for data movement. Rebuild and run
+
+- Three incomplete functions are added to explicitly move the data around in `core.cpp` or `core.F90`.
+
+- You need to add the directives for data movement for them.
+
+- Then recompile and run the code. A template solution can be found in ``content/exercise/solution/data_mapping``.
 
 ---
 
