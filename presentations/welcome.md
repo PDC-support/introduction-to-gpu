@@ -30,14 +30,14 @@ style: |
 
 <!-- paginate: true -->
 
+# Welcome to the
+
 # Introduction to GPUs course
 
 Stockholm/Zoom, September - October, 2023
 
 ### A practical course presented by PDC in collaboration with ENCCS, HPE and AMD
 
-#
-#
 #
 ### PDC Center for High Performance Computing, KTH Royal Institute of Technology, Sweden
 
@@ -63,9 +63,16 @@ Stockholm/Zoom, September - October, 2023
 * 12 & 13 October (all day, in person at KTH, Stockholm)
 * Time in between the sessions for own work on exercises
 
-### Important links
+---
+
+### Resource and important links
 
 * Schedule: https://github.com/PDC-support/introduction-to-gpu
 * Course material: https://github.com/PDC-support/introduction-to-gpu
-* HackMD:
-* Slack:
+* HackMD: https://hackmd.io/@johanhellsvik/IntroductionToGPU
+* Slack: link shared over email
+
+### The HackMD document and the Slack board will be open during all the course.
+
+* Questions and answers in the HackMD will be curated so that we can keep the document for later.
+* The Slack is transient (90 days, free version of Slack), wherefore we aim to migrate contents to HackMD whenever it is relevant.
