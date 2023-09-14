@@ -573,9 +573,10 @@ end program dotproduct
 
 - Activate the PrgEnv-cray environment ``ml PrgEnv-cray``
 
-- Download the [source code](https://github.com/ENCCS/openmp-gpu/raw/main/content/exercise/ex04/solution/ex04.F90)
+- Download the source code [F90](https://github.com/ENCCS/openmp-gpu/raw/main/content/exercise/ex04/solution/ex04.F90) or [C](https://github.com/ENCCS/openmp-gpu/raw/main/content/exercise/ex04/solution/ex04.F90)
 ```
 wget https://github.com/ENCCS/openmp-gpu/raw/main/content/exercise/ex04/solution/ex04.F90
+wget https://github.com/ENCCS/openmp-gpu/raw/main/content/exercise/ex04/solution/ex04.c
 ```
 
 - Load the ROCm module and set the accelerator target to amd-gfx90a
@@ -585,7 +586,10 @@ wget https://github.com/ENCCS/openmp-gpu/raw/main/content/exercise/ex04/solution
      ``export CRAY_ACC_DEBUG=3``
 
 - Compile the code on the login node
-    ``ftn -fopenmp ex04.F90 -o ex04.x``
+```
+  ftn -fopenmp ex04.F90 -o ex04_f90.x
+  cc -fopenmp ex04.c -o ex04.x
+```
 
 ---
 
@@ -663,7 +667,7 @@ The exercise is about optimization and explicitly moving the data using the `tar
 
 ```
 git clone https://github.com/ENCCS/openmp-gpu.git
-cd content/exercise/data_mapping
+cd openmp-gpu/content/exercise/data_mapping
 ```
 
 - Load the ROCm module and set the accelerator target to amd-gfx90a. Activate the PrgEnv-gnu environment. Using the Makefile, compile the code on the login node. Specify use of the Gnu compilers.
@@ -674,6 +678,8 @@ ml PrgEnv-gnu
 COMP=gnu make
 ```
 
+- Run the executable ``heat_serial`` in a batch job
+
 ---
 
 ## Add directives for data movement. Rebuild and run
@@ -682,7 +688,7 @@ COMP=gnu make
 
 - You need to add the directives for data movement for them.
 
-- Then recompile and run the code. A template solution can be found in ``content/exercise/solution/data_mapping``.
+- Then recompile and run the code. A template solution can be found in ``openmp-gpu/content/exercise/solution/data_mapping``.
 
 ---
 
