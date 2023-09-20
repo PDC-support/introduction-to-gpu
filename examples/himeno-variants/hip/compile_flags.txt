@@ -1,0 +1,2 @@
+-I/opt/rocm/include
+-D__HIP_PLATFORM_AMD__
