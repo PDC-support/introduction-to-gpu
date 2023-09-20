@@ -7,7 +7,8 @@
 
 module load PrgEnv-cray
 module load craype-accel-amd-gfx90a
-module load rocm
+module load PDC/22.06
+module load hipsycl/0.9.4-cpeGNU-22.06 
 
 module list
 
