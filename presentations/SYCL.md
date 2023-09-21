@@ -72,7 +72,7 @@ SYCL itself is only a _standard_, for which several open-source _implementations
 - AdaptiveCpp (a.k.a. hipSYCL, Open SYCL): supports NVIDIA and AMD GPUs, with pre-release Intel GPU support and possible MooreThreads support. Also CPUs.
 - ComputeCPP, triSYCL, motorSYCL, SYCLops, Sylkan, ...
 
-Neither is fully standard compliant, but things are getting better.
+None are fully standard compliant, but things are getting better.
 
 ---
 
