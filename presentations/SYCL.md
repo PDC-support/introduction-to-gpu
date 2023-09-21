@@ -408,13 +408,13 @@ srun ./dot_sycl_usm > output.txt # Run the executable
 
 - Wait for a node, then run the program ``srun -n 1 ./dot_sycl_usm``
 
-- The output will be printed to the standard output`
+- The output will be printed to the standard output
 
 ---
 
 ## Optionally, check out the version with accessors:
 
-- ``wget https://raw.githubusercontent.com/PDC-support/introduction-to-gpu/blob/main/examples/sycl/dot_sycl_accessors.cpp``
+- ``wget https://raw.githubusercontent.com/PDC-support/introduction-to-gpu/main/examples/sycl/dot_sycl_accessors.cpp``
 - ``syclcc -O2 dot_sycl_accessors.cpp -o ./dot_sycl_accessors``
 - Run interactively or via batch job
 
