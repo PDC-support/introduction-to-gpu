@@ -1,16 +1,11 @@
-# How to use OpenSYCL
+# How to use AdaptiveCpp (hipSYCL)
 
-## On Lumi
+## On LUMI
 
-Install hipSYCL (OpenSYCL) locally:
+Use hipSYCL module from CSC:
 ```
-module load LUMI/22.08 partition/G EasyBuild-user
-eb --robot /appl/lumi/LUMI-EasyBuild-contrib/easybuild/easyconfigs/h/hipSYCL/hipSYCL-0.9.4-cpeGNU-22.08.eb
-```
-
-Then, load the module:
-```
-module load LUMI/22.08 partition/G EasyBuild-user hipSYCL/0.9.4-cpeGNU-22.08
+module use /appl/local/csc/modulefiles
+module load hipsycl/0.9.4
 ```
 
 and compile with
@@ -20,7 +15,7 @@ make
 
 ## On Dardel
 
-Load a hipSYCL (OpenSYCL) module
+Load a hipSYCL module:
 ```
 ml PDC/22.06
 ml hipsycl/0.9.4-cpeGNU-22.06

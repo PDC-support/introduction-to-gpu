@@ -20,8 +20,8 @@ Here are the different implementations (all are C++):
   an attempt has been made to optimize the computation using shared memory, but is
   currently not worth it, so not enabled in the code. C++17 current, C++14 minimal.
   **Make sure** to load the environment show after this.
-- `sycl/`, an hipSYCL (OpenSYCL) implementation, **make sure** to properly load the 
-  modules, as explained in the directory's README.
+- `sycl/`, a SYCL (using hipSYCL/AdaptiveCpp) implementation, **make sure** to properly 
+  load the modules, as explained in the directory's README.
 - `omp/`, an OpenMP implementation, **make sure** to load the environment show after this.
 
 Environment required for OpenMP and HIP to compile:
