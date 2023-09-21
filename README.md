@@ -24,7 +24,7 @@ A practical course presented by PDC in collaboration with ENCCS, HPE and AMD
 - 14:00 – 14:20 HIP exercises (Jonathan Vincent)
 - 14:20 – 14:45 [SYCL](presentations/SYCL.pdf) (Andrey Alekseenko)
 - 15:00 – 15:20 SYCL exercises (Andrey Alekseenko)
-- 15:20 – 16:45 AMD Omni tools (AMD)
+- 15:20 – 16:45 AMD Omni tools (Samuel Antao, AMD)
 - 16:45 – 17:00 [Information on homework exercises](presentations/homework.pdf) (Johan Hellsvik)
 
 ## Thursday 12th October (first onsite day)
