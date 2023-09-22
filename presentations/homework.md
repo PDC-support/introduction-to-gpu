@@ -53,5 +53,19 @@ The two onsite days are three weeks from now. We encourage you to
 
 ### Questions and answers can be posted on the course HackMD page, and on the Slack board.
 
+---
 
+# Himeno benchmark
+
+* A benchmark to evaluate performance of incompressible fluid analysis code. Written by Ryutaro Himeno, Riken
+
+* [Webpage for Himone benchmark](https://i.riken.jp/en/supercom/documents/himenobmt/)
+
+### Homework on Himeno
+
+* Start from the [serial Himeno code](https://github.com/PDC-support/introduction-to-gpu/blob/main/examples/himeno-variants/original/himenoBMTxpa.c)
+
+* Think about how to implement Himeno in HIP, SYCL, or OpenMP at onsite days.
+
+* Template solutions [in HIP, SYCL, and OpenMP](https://github.com/PDC-support/introduction-to-gpu/tree/main/examples/himeno-variants) But do not look there yet!
 
