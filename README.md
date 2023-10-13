@@ -29,14 +29,14 @@ A practical course presented by PDC in collaboration with ENCCS, HPE and AMD
 
 ## Thursday 12th October (first onsite day)
 ### [Lecture hall E2](https://www.kth.se/places/room/id/6d755462-55f2-43a3-8312-e2285c572e40)
-- 09:00 – 11:00 Compiler techniques (Jean Pourroy, HPE)
+- 09:00 – 11:00 Compiler techniques, [Parallel environment and modules](presentations/PDC_PE_and_Modules.pdf), [Advanced placement](presentations/PDC_Advanced_Placement.pdf) (Jean Pourroy, HPE)
 - 11:00 – 12:00 Own work on Himeno and own codes with tutoring
 - 13:30 – 15:00 Own work on Himeno and own codes with tutoring
 - 15:00 – 16:00 Q&A section: Highlight things seen during the onsite help. Hand out template solutions for Himeno
 
 ## Friday 13th October (second onsite day)
 ### [Lecture hall U41](https://www.kth.se/places/room/id/bb4faf52-8ff1-40ae-8211-b73a54703b8d)
-- 09:00 – 11:00 Optimization tools (Pierre-Eric Bernard, HPE).
+- 09:00 – 11:00 Optimization tools [Introduction to perftools](presentations/08_debugging_at_scale.pdf), [Advanced performance analysis](presentations/09_introduction_to_perftools.pdf), [Debugging at scale](presentations/10_advanced_performance_analysis_merged.pdf) (Pierre-Eric Bernard, HPE).
 - 11:00 – 12:00 Continue on example codes: analyze codes
 ### [Lecture hall E36](https://www.kth.se/places/room/id/3a0a5528-e43c-4f3c-9e6e-85689d6b0ce6)
 - 13:30 – 15:00 Walk through of the Himeno template solutions.
